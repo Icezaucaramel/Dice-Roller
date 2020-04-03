@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller @P.Keller</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="titreAll">
+                    <div class="titrePage">
+                        <h1>DICE ROLLER</h1>
+                    </div>
+                    <div class="titreWelcome">
+                        <h2>BIENVENUE DANS DICE ROLLER</h2>
+                    </div>
+                    <div class="titreInfo">
+                        <h3>Vous pourrez ici choisir le nombre de dés et rajouter un dé selon vos envies</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="deCouleursAll">
+                <div class="vert configD">
+                    <img src="images/deVert.png">
+                    <div class="buttonAll">
+                        <div class="buttonMinus">
+                            <button class="configButton bouton4Disabled" type="button"
+                                onclick="boutonMinus(4)">-</button>
+                        </div>
+                        <div class="changeZero">
+                            <p id="0of4">0</p>
+                        </div>
+                        <div class="butonPlus">
+                            <button class="buttonPlus configButton" type="button" onclick="boutonPlus(4)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bleu configD">
+                    <img src="images/deBleu.png">
+                    <div class="buttonAll">
+                        <div class="buttonMinus">
+                            <button class="butonMinus configButton bouton6Disabled" type="button"
+                                onclick="boutonMinus(6)">-</button>
+                        </div>
+                        <div class="changeZero">
+                            <p id=0of6>0</p>
+                        </div>
+                        <div class="butonPlus">
+                            <button class="buttonPlus configButton" type="button" onclick="boutonPlus(6)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Violet configD">
+                    <img src="images/deViolet.png">
+                    <div class="buttonAll">
+                        <div class="buttonMinus">
+                            <button class="butonMinus configButton bouton8Disabled" type="button"
+                                onclick="boutonMinus(8)">-</button>
+                        </div>
+                        <div class="changeZero">
+                            <p id=0of8>0</p>
+                        </div>
+                        <div class="butonPlus">
+                            <button class="buttonPlus configButton" type="button" onclick="boutonPlus(8)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="noir configD">
+                    <img src="images/deNoir.png">
+                    <div class="buttonAll">
+                        <div class="buttonMinus">
+                            <button class="butonMinus configButton bouton99Disabled" type="button"
+                                onclick="boutonMinus(99)">-</button>
+                        </div>
+                        <div class="changeZero">
+                            <p id="0of99">0</p>
+                        </div>
+                        <div class="butonPlus">
+                            <button class="buttonPlus configButton" type="button" onclick="boutonPlus(99)">+</button>
+                        </div>
+                    </div>
+                    <div class="inputWellPlaced">
+                        <div class="inputSection">
+                            <input class="inputNumber" name="changePlaceHolder" type="text" maxlength="2" max="2"
+                                size="1" placeholder="50" pattern="/D" required oninput="checkNumberFieldLength();">
+                        </div>
+                    </div>
+                </div>
+                <div class="rouge configD">
+                    <img src="images/deRouge.png">
+                    <div class="buttonAll">
+                        <div class="buttonMinus">
+                            <button class="butonMinus configButton bouton10Disabled" type="button"
+                                onclick="boutonMinus(10)">-</button>
+                        </div>
+                        <div class="changeZero">
+                            <p id=0of10>0</p>
+                        </div>
+                        <div class="butonPlus">
+                            <button class="buttonPlus configButton" type="button" onclick="boutonPlus(10)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="orange configD">
+                    <img src="images/deOrange.png">
+                    <div class="buttonAll">
+                        <div class="buttonMinus">
+                            <button class="butonMinus configButton bouton12Disabled" type="button"
+                                onclick="boutonMinus(12)">-</button>
+                        </div>
+                        <div class="changeZero">
+                            <p id=0of12>0</p>
+                        </div>
+                        <div class="butonPlus">
+                            <button class="buttonPlus configButton" type="button" onclick="boutonPlus(12)">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="rougeDk configD">
+                    <img src="images/deRougeDk.png">
+                    <div class="buttonAll">
+                        <div class="buttonMinus">
+                            <button class="butonMinus configButton bouton20Disabled" type="button"
+                                onclick="boutonMinus(20)">-</button>
+                        </div>
+                        <div class="changeZero">
+                            <p id=0of20>0</p>
+                        </div>
+                        <div class="butonPlus">
+                            <button class="buttonPlus configButton" type="button" onclick="boutonPlus(20)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="contrainer-fluid">
+        <div class="row getAllMain">
+            <div class="tableauRecap">
+                <div class="greenDice">
+                    <img src="images/deVert.png">
+                    <p>=</p>
+                    <p>0</p>
+                </div>
+                <div class="deBlue">
+                    <img src="images/deBleu.png">
+                    <p>=</p>
+                    <p>0</p>
+                </div>
+                <div class="purpleDice">
+                    <img src="images/deViolet.png">
+                    <p>=</p>
+                    <p>0</p>
+                </div>
+                <div class="blackDice">
+                    <img src="images/deNoir.png">
+                    <p>=</p>
+                    <p>0</p>
+                </div>
+                <div class="redDice">
+                    <img src="images/deRouge.png">
+                    <p>=</p>
+                    <p>0</p>
+                </div>
+                <div class="orangeDice">
+                    <img src="images/deOrange.png">
+                    <p>=</p>
+                    <p>0</p>
+                </div>
+                <div class="redDkDice">
+                    <img src="images/deRougeDk.png">
+                    <p>=</p>
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="sacAll">
+                <div class="imgSac">
+                    <img src="images/sac.png">
+                </div>
+                <div class="totalDuSac">
+                    <p id="totalSac">0</p>
+                </div>
+                <div class="boutonLancerContainer offset-1">
+                    <button class="buttonLance" type="button" onclick="lancerTotal()">LANCER LES DÉS</button>
+                </div>
+            </div>
+            <div class="boutonResetAll">
+                <button class="reset" onclick="resetAll()">Reset</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

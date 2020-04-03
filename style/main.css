@@ -1,0 +1,173 @@
+/* Défault Settings */
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+/* Header */
+
+.titreAll{
+    display: inline-block;
+    text-align: center;
+}
+
+.titrePage h1{
+    font-size: 8.5vw;
+}
+
+.titreWelcome h2{
+    font-size: 4vw;
+}
+
+
+.titreInfo h3{
+    font-size: 2.4vw;
+}
+
+/* Dés et Boutons */
+
+.deCouleursAll{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 20px 0 20px
+}
+
+.buttonAll{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.configButton{
+    background-color: white;
+    color: black;
+    border: 0.2vw solid black; 
+    transition-duration: 0.4s;
+}
+
+.configButton:hover {
+    background-color: black; 
+    color: white;
+  }
+
+/* Input */
+
+.inputWellPlaced{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -150px;
+}
+
+.inputSection{
+    margin: 0 auto;
+}
+
+[contenteditable="true"]:focus {
+    outline: none;
+}
+
+input:required {
+    box-shadow:none;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+::placeholder{
+    color: #858585 ;
+}
+
+/* Tableau Dé */
+.getAllMain{
+    justify-content: space-between;
+}
+
+.tableauRecap{
+    margin-left: 2vw;
+    border: 2px solid black;
+}
+
+.tableauRecap p{
+    margin: auto;
+}
+
+.tableauRecap img{
+    width: 45%;
+}
+
+.greenDice,
+.deBlue,
+.purpleDice,
+.blackDice,
+.redDice,
+.orangeDice,
+.redDkDice{
+    display: flex;
+}
+
+/* Reset Bouton */
+
+.boutonResetAll{
+    width: 9vw;
+    margin-top: 25vh;
+}
+
+.reset{
+    background-color: white;
+    color: black;
+    border: 0.2vw solid black; 
+    transition-duration: 0.4s;
+}
+
+.reset:hover {
+    background-color: black; 
+    color: white;
+  }
+
+/* Total Sac + Bouton lancer */
+
+.totalDuSac{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vw;
+    margin-top: -18vw;
+}
+
+.boutonLancerContainer{
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonLance{
+    background-color: white;
+    color: black;
+    border: 3px solid black; 
+    transition-duration: 0.4s;
+}
+
+.buttonLance:hover {
+    background-color: black; 
+    color: white;
+  }
+
+
+.buttonLance{
+    font-size: 1.5vw;
+}
+
+
