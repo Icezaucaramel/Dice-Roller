@@ -172,3 +172,13 @@ input[type="text"]
 .buttonLance{
     font-size: 1.5vw;
 }
+
+.blackDice{
+    text-align: center;
+}
+
+#changeRandomOfBlack{
+    position: relative;
+    margin-left: -42px;
+    font-size: 18px;
+}

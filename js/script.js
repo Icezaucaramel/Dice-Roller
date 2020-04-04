@@ -90,6 +90,7 @@ function lancerTotal() {
   let total10Random = total10 * Math.floor(Math.random() * 10 + 1)
   let total12Random = total12 * Math.floor(Math.random() * 12 + 1)
   let total20Random = total20 * Math.floor(Math.random() * 20 + 1)
+  document.getElementById('changeRandomOfBlack').innerHTML = random
   document.querySelector('.totalGreen').innerHTML = total4Random
   document.querySelector('.totalBlue').innerHTML = total6Random
   document.querySelector('.totalPurple').innerHTML = total8Random
