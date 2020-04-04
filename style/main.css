@@ -97,6 +97,9 @@ input[type="text"]
 .tableauRecap{
     margin-left: 2vw;
     border: 2px solid black;
+    display: flex;
+    flex-direction : column;
+    justify-content : space-between;    
 }
 
 .tableauRecap p{
@@ -169,5 +172,3 @@ input[type="text"]
 .buttonLance{
     font-size: 1.5vw;
 }
-
-
