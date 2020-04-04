@@ -120,6 +120,12 @@ input[type="text"]
     display: flex;
 }
 
+#changeRandomOfBlack{
+    position: relative;
+    margin-left: -42px;
+    font-size: 18px;
+}
+
 /* Reset Bouton */
 
 .boutonResetAll{
@@ -175,10 +181,4 @@ input[type="text"]
 
 .blackDice{
     text-align: center;
-}
-
-#changeRandomOfBlack{
-    position: relative;
-    margin-left: -42px;
-    font-size: 18px;
 }
