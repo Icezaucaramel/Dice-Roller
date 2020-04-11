@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Source Sans Pro', sans-serif;
+    background-image: url("../images/fond.png");
 }
 
 img{
@@ -45,7 +46,7 @@ img{
 
 
 .configButton{
-    background-color: white;
+    background-color: #a3c5c6;
     color: black;
     border: 0.2vw solid black; 
     transition-duration: 0.4s;
@@ -134,7 +135,7 @@ input[type="text"]
 }
 
 .reset{
-    background-color: white;
+    background-color: #a3c5c6;
     color: black;
     border: 0.2vw solid black; 
     transition-duration: 0.4s;
@@ -163,7 +164,7 @@ input[type="text"]
 }
 
 .buttonLance{
-    background-color: white;
+    background-color: #a3c5c6;
     color: black;
     border: 3px solid black; 
     transition-duration: 0.4s;
